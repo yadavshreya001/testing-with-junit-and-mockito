@@ -1,12 +1,20 @@
 package com;
 
 public class Student {
-    public int id;
-    public String name;
+
+    private int id;
+    private String name;
+    private String department;
 
     public Student(int id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public Student(int id, String name, String department) {
+        this.id = id;
+        this.name = name;
+        this.department = department;
     }
 
     public int getId() {
@@ -24,4 +32,13 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
 }
